@@ -1,0 +1,219 @@
+body, html {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+#sidebar {
+    width: 260px;
+    background: rgb(218, 216, 216);
+}
+
+#main {
+    width: calc(100% - 260px);
+    background: rgba(160, 160, 160, 0.699);
+}
+
+h1 {
+    margin-top: 10px;
+    color: rgba(75, 75, 75, 0.836)
+}
+
+h3 {
+    margin-top: 100px;
+    color: rgba(35, 35, 126, 0.568)
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+tr td:first-child {
+    font-weight: 900;
+}
+
+button {
+    padding: 7px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#buttons {
+    margin-left: 20px;
+    text-align: left;
+}
+
+button:focus {
+    outline: none;
+}
+
+#add-day {
+    background: green;
+}
+
+#remove-day {
+    background: red;
+}
+
+#update-table {
+    background: rgba(0, 0, 255, 0.527);
+}
+
+#table {
+    margin-left: 20px;
+    display: flex;
+}
+
+#student-name,
+#average-score,
+.daily-score {
+    flex-direction: column;
+    display: flex
+}
+
+#days {
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+}
+
+#student-name div,
+#average-score div,
+.daily-score div {
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    border: 1px solid black;
+    padding: 2px 5px;
+    margin: 0;
+    display: inline-block;
+}
+
+#student-name div:first-child,
+#average-score div:first-child,
+.daily-score div:first-child {
+    height: 40px;
+    line-height: 40px;
+}
+
+#student-name div {
+    width: 150px;
+    background: gray;
+}
+
+#average-score div {
+    width: 60px;
+    background: #008586;
+}
+
+.daily-score div {
+    width: 90px;
+}
+
+.daily-score div:first-child {
+    background: rgb(241, 238, 7);
+    color: black;
+}
+
+
+
+@media screen and (max-width: 1030px) {
+
+    #main {
+        height: 100vh;
+        width: 100%;
+        background: rgba(160, 160, 160, 0.699);
+    }
+
+    #container {
+        flex-direction: column
+    }
+    
+    #sidebar {
+        width: 100%;
+        height: 180px;
+        background: rgb(218, 216, 216);
+        display: flex;
+    }
+    
+    #table {
+        flex: auto;
+    }
+
+    #sidebar h1 {
+        margin-left: 10px;
+        flex: 3;
+        display: grid;
+        align-content: center;
+    }
+
+    #sidebar table {
+        flex: 2;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 3px;
+    }
+
+    #sidebar h3 {
+        flex: 2;
+        margin: 0;
+        margin-right: 5px;
+        display: grid;
+        align-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #sidebar {
+        display: flex
+    }
+
+    #sidebar h1 {
+        flex: 1;
+        font-size: 22px;
+    }
+
+    #sidebar table {
+        flex: 1, 2;
+        font-size: 13px;
+    }
+
+    #sidebar h3 {
+        flex: 1;
+        font-size: 13px;
+    }
+
+    #average-score div,
+    #student-name div {
+        font-size: 11px;
+        width: 100px;
+    }
+
+    #average-score div {
+        width: 50px;
+    }
+
+    .daily-score div {
+        width: 50px;
+    }
+
+    button {
+        padding: 7px 3px;
+    }
+
+}
