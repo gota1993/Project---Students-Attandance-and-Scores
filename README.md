@@ -1,4 +1,8 @@
-# Project---Students-Attandance-and-Scores
+Techub Learning Center First Project - Students Attandance and Scores
+
+You can see web app at link: https://gota1993.github.io/Project---Students-Attandance-and-Scores/
+
+Project description: 
 
 As a first step project you are going to develop Student management system using only HTML/CSS/Javascript The application will have a main table, where the student’s names are listed with the grade points assigned to them for every lecture and the average of points.
 
